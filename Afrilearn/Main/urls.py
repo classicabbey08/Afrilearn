@@ -1,0 +1,23 @@
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.home, name="home"),
+    path('about/', views.about, name="about"),
+    path('courses/', views.courses, name="courses"),
+    path('contact/', views.contact, name="contact"),
+    path('shop/', views.shop, name="shop"),
+    path('gallery/', views.gallery, name="gallery"),
+    path('blog/', views.blog, name="blog"),
+    path('teachers/', views.teachers, name="teachers"),
+    path('support/', views.support, name="support"),
+    path('support/', views.support, name="support"),
+    path('faqs/', views.faqs, name="faqs"),
+    path('privacy/', views.privacy, name="privacy"),
+    path('policy/', views.policy, name="policy"),
+    path('documentation/', views.documentation, name="documentation"),
+    path('events/', views.events, name="events"),
+    path('events/<slug:slug>/', views.event_detail, name="event_detail"),
+    path('teachers/<slug:slug>/', views.teacher_detail, name="teacher_detail"),
+]
